@@ -1,0 +1,143 @@
+body {
+    margin: 0; /* Removes the default margin around the body for a full-width layout. */
+    font-family: Arial, sans-serif; /* Sets the font family for the text. */
+    line-height: 1.6; /* Sets the spacing between lines for better readability. */
+    color: #333; /* Sets the default text color to dark gray. */
+}
+
+header {
+    background: #333; /* Sets a dark gray background color for the header. */
+    color: #fff; /* Sets the text color to white. */
+    padding: 1rem 2rem; /* Adds spacing inside the header. */
+    display: flex; /* Enables flexbox for layout. */
+    justify-content: space-between; /* Ensures elements are spaced out evenly. */
+    align-items: center; /* Aligns items vertically in the center. */
+}
+
+nav a {
+    color: #fff; /* Sets the color of navigation links to white. */
+    text-decoration: none; /* Removes the underline from links. */
+    margin: 0 1rem; /* Adds horizontal spacing between navigation links. */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Adds an underline when the user hovers over a link. */
+}
+
+.hero {
+    text-align: center; /* Centers the text within the hero section. */
+    padding: 2rem; /* Adds padding inside the hero section. */
+    background: url('Images/image copy.png') no-repeat center center/cover; /* Sets a background image. */
+    color: #fff; /* Sets the text color to white. */
+    height: 60vh; /* Sets the height to 60% of the viewport height. */
+    display: flex; /* Enables flexbox for layout. */
+    flex-direction: column; /* Stacks elements vertically. */
+    justify-content: center; /* Centers content vertically. */
+    align-items: center; /* Centers content horizontally. */
+}
+
+.features, .specifications, .footer {
+    padding: 2rem; /* Adds padding to these sections for spacing. */
+}
+
+.features {
+    background: #f4f4f4; /* Sets a light gray background for the features section. */
+}
+
+.features h2, .specifications h2 {
+    text-align: center; /* Centers the headings in both sections. */
+    margin-bottom: 1rem; /* Adds spacing below the headings. */
+}
+
+.features .feature-item {
+    display: flex; /* Aligns feature items in a row. */
+    align-items: center; /* Centers items vertically within the row. */
+    margin-bottom: 1rem; /* Adds spacing below each feature item. */
+}
+
+.features .feature-item img {
+    width: 50px; /* Sets the width of feature item images. */
+    margin-right: 1rem; /* Adds spacing to the right of the images. */
+}
+
+.spec-table {
+    width: 100%; /* Makes the table take up the full width. */
+    border-collapse: collapse; /* Ensures the table borders collapse together. */
+}
+
+.spec-table thead {
+    background-color: #333; /* Sets the background color for table headers. */
+    color: white; /* Sets the text color to white for the table headers. */
+}
+
+.spec-table th, .spec-table td {
+    padding: 12px 15px; /* Adds padding inside the table cells. */
+    text-align: left; /* Aligns the text to the left inside the table cells. */
+}
+
+.spec-table tbody tr:nth-child(even) {
+    background-color: #f4f4f4; /* Sets a background color for even rows. */
+}
+
+.spec-table tbody tr:nth-child(odd) {
+    background-color: #fff; /* Sets a background color for odd rows. */
+}
+
+.footer {
+    background: #333; /* Sets a dark gray background for the footer. */
+    color: #fff; /* Sets the text color to white. */
+}
+
+.footer a {
+    color: #fff; /* Sets footer links to white. */
+    text-decoration: none; /* Removes underlines from footer links. */
+}
+
+.footer form {
+    display: flex; /* Enables flexbox for the form layout. */
+    flex-wrap: wrap; /* Allows items to wrap to the next line if needed. */
+    gap: 0.5rem; /* Adds spacing between form elements. */
+}
+
+.footer input[type="email"] {
+    flex: 1; /* Makes the email input box take up available space. */
+    padding: 0.5rem; /* Adds padding inside the input field. */
+    border: none; /* Removes the border. */
+}
+
+.footer button {
+    padding: 0.5rem 1rem; /* Adds padding inside the button. */
+    background: #ff6600; /* Sets the button background color to orange. */
+    color: #fff; /* Sets the button text color to white. */
+    border: none; /* Removes the button border. */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button. */
+}
+
+.social-icon {
+    width: 30px; /* Sets the width of social media icons. */
+    height: 30px; /* Sets the height of social media icons. */
+}
+
+.features div img {
+    width: 30px; /* Sets the width of images within feature divs. */
+    height: 30px; /* Sets the height of images within feature divs. */
+}
+
+.footer {
+    text-align: center; /* Centers the content within the footer. */
+}
+
+@media (max-width: 768px) {
+    .features .feature-item {
+        flex-direction: column; /* Stacks feature items vertically on smaller screens. */
+        align-items: flex-start; /* Aligns items to the left. */
+    }
+
+    .hero h1 {
+        font-size: 2rem; /* Reduces the font size of the hero heading for smaller screens. */
+    }
+
+    nav a {
+        margin: 0 0.5rem; /* Reduces the spacing between navigation links for smaller screens. */
+    }
+}

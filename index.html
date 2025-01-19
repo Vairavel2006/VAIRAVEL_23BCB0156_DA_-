@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Specifies the character encoding as UTF-8, supporting a wide range of characters. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Enables responsive design by adapting the width to the device. -->
+    <title>Smartphone Landing Page</title> <!-- Sets the webpage's title as seen in the browser tab. -->
+    <link rel="stylesheet" href="styles.css"> <!-- Links an external CSS file for styling the webpage. -->
+</head>
+<body>
+    <header>
+        <h1 style="display: flex; align-items: center;">
+            <img src="Images/image.png" alt="Innova One Logo" style="width: 40px; height: 40px; margin-right: 10px;"> <!-- Logo image next to the title -->
+            Innova One
+        </h1>
+        <nav>
+            <a href="#features">Features</a> <!-- Link to Features section -->
+            <a href="#specifications">Specifications</a> <!-- Link to Specifications section -->
+            <a href="#reviews">Reviews</a> <!-- Link to Reviews section -->
+            <a href="#buy">Buy Now</a> <!-- Link to Buy Now section -->
+        </nav>
+    </header>    
+    <section class="hero"> <!-- Hero section with a prominent call-to-action or introduction. -->
+        <h2>Experience the Future</h2> <!-- Secondary heading for the hero section. -->
+        <p><q>The all-new Innova One redefines technology.</q></p> <!-- Brief descriptive text for the product. -->
+    </section>
+
+    <section id="features" class="features"> <!-- Features section with key selling points. -->
+        <h2>Key Features</h2> <!-- Heading for the Features section. -->
+        <div style="display: flex; align-items: center;"> <!-- Container for a feature item. -->
+            <img src="Images/icon1.webp" alt="Camera" style="width: 30px; height: 30px;"> <!-- Icon for the camera feature. -->
+            <p style="margin-left: 10px;">High-Resolution Camera</p> <!-- Description of the camera feature. -->
+        </div>
+        <div style="display: flex; align-items: center;"> <!-- Container for a feature item. -->
+            <img src="Images/icon2.png" alt="Battery" style="width: 30px; height: 30px;"> <!-- Icon for the battery feature. -->
+            <p style="margin-left: 10px;">Long Battery Life</p> <!-- Description of the battery feature. -->
+        </div>
+        <div style="display: flex; align-items: center;"> <!-- Container for a feature item. -->
+            <img src="Images/icon3.jpg" alt="Processor" style="width: 30px; height: 30px;"> <!-- Icon for the processor feature. -->
+            <p style="margin-left: 10px;">Fast Processor</p> <!-- Description of the processor feature. -->
+        </div>
+    </section>
+
+    <section id="specifications" class="specifications"> <!-- Section for the technical specifications of the product. -->
+        <h2>Technical Specifications</h2> <!-- Heading for the specifications section. -->
+        <table class="spec-table"> <!-- Table to display the specifications in rows. -->
+            <thead>
+                <tr>
+                    <th>Specification</th> <!-- Column header for specification names. -->
+                    <th>Details</th> <!-- Column header for specification details. -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Display</td> <!-- Specification name: Display. -->
+                    <td>6.5" OLED</td> <!-- Specification detail for display size and type. -->
+                </tr>
+                <tr>
+                    <td>Processor</td> <!-- Specification name: Processor. -->
+                    <td>Octa-Core 3.2 GHz</td> <!-- Specification detail for the processor type and speed. -->
+                </tr>
+                <tr>
+                    <td>Battery</td> <!-- Specification name: Battery. -->
+                    <td>5000mAh</td> <!-- Specification detail for battery capacity. -->
+                </tr>
+                <tr>
+                    <td>Camera</td> <!-- Specification name: Camera. -->
+                    <td>108MP + 12MP + 8MP</td> <!-- Specification detail for the camera megapixels. -->
+                </tr>
+            </tbody>
+        </table>
+    </section>
+        
+
+    <footer class="footer"> <!-- Footer section with contact and social links. -->
+        <p>Contact us: support@innovaone.com</p> <!-- Customer support contact. -->
+        <p>Follow us on social media</p> <!-- Call-to-action for social media engagement. -->
+        <p>
+            <a href="https://facebook.com" target="_blank"> <!-- Link to Facebook. -->
+                <img src="Images/facebook.webp" alt="Facebook" style="width: 30px; height: 30px;"> Facebook
+            </a>
+            &nbsp; <!-- Space between social media links. -->
+            <a href="https://x.com" target="_blank"> <!-- Link to X (formerly Twitter). -->
+                <img src="Images/xicon.svg" alt="X" style="width: 30px; height: 30px;"> X
+            </a>
+            &nbsp; <!-- Space between social media links. -->
+            <a href="https://instagram.com" target="_blank"> <!-- Link to Instagram. -->
+                <img src="Images/instagram.webp" alt="Instagram" style="width: 30px; height: 30px;"> Instagram
+            </a>
+        </p>
+        <p> <!-- Newsletter subscription form. -->
+            <input type="email" placeholder="Subscribe to our newsletter"> <!-- Input field for email. -->
+            <button>Subscribe</button> <!-- Button for subscription submission. -->
+        </p>
+    </footer>
+</body>
+</html>
